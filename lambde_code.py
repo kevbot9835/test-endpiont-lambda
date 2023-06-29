@@ -5,10 +5,10 @@ import boto3
 
 def lambda_handler(event, context):
     #calling the function with websites
-    region="ca-central-1"
-    senderemail="enter sender email"
-    receiveremail="enter receiver email"
-    S3bucket="enter s3 bucketname"
+    region="us-east-1"
+    senderemail="evbuomwan35@gmail.com"
+    receiveremail="jeslon.marathon@gmail.com"
+    S3bucket="kevbot"
     websiteFile="websites.txt"
     sites=get_bucket_data(S3bucket,websiteFile)
     if is_verified_email(senderemail,receiveremail):
